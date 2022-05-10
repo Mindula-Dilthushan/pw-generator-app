@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator Application</title>
+
+    <!--Import Css Files-->
+    <link rel="stylesheet" href="../static/css/main.css">
+
+    <!--Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body class="d-flex d-col">
+
+<h1 class="header-txt"> Password Generator Application </h1>
+
+<div class="content d-flex">
+    <form class="form d-flex d-col" method="post">
+        <input
+                class="input"
+                name="pw_len"
+                placeholder=" enter you need password length"
+                value="{{ pw_len }}"
+        >
+        <input
+                readonly
+                class="input mt"
+                name="pw"
+                value="{{ pw }}"
+        >
+        <button class="mt btn-generate" type="submit">
+            Generate
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
